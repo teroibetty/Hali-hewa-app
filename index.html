@@ -3,38 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Hali Hewa</title>
   </head>
-  <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <h1>Paris</h1>
-      <p>
-        Wednesday 10:47, broken clouds
-        <br />
-        Humidity: 94%, Wind: 5.14km/h
-      </p>
-      <div>☀18°C</div>
-    </main>
-    <footer>
-      This project was built by
-      <a href="https://github.com/teroibetty" target="_blank"> Betty Teroi </a>
-      and is open source on
-      <a
-        href="https://github.com/teroibetty/Weather-forecast-app"
-        target="_blank"
-      >
-        GitHub
-      </a>
-      and hosted on
-      <a href="https://hali-hewa-podcst.netlify.app/" target="_blank">
-        Netlify </a
-      >.
-    </footer>
-  </body>
+  <div class="container">
+    <body>
+      <header>
+        <form class="input-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input-form"
+          />
+          <input type="submit" value="Search" class="submit-input-form" />
+        </form>
+      </header>
+      <main>
+        <h1 class="input-city">Paris</h1>
+        <div class="app-details">
+          <p>
+            Wednesday 10:47, broken clouds
+            <br />
+            Humidity: <strong>94% </strong> , Wind: <strong>5.14km/h</strong>
+          </p>
+          <div class="temperature">
+            <span class="temp-icon">☀</span><span class="temp-value">18</span
+            ><span class="metric-value">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was built by
+        <a href="https://github.com/teroibetty" target="_blank">
+          Betty Teroi
+        </a>
+        and is open source on
+        <a
+          href="https://github.com/teroibetty/Weather-forecast-app"
+          target="_blank"
+        >
+          GitHub
+        </a>
+        and hosted on
+        <a href="https://hali-hewa-podcst.netlify.app/" target="_blank">
+          Netlify </a
+        >.
+      </footer>
+    </body>
+  </div>
 </html>
